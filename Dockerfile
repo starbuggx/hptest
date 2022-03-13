@@ -24,9 +24,6 @@ RUN apt update && apt install -y \
     python3 -m pip install flask
 
 
-
-
-
 ENV FLASK_ENV=development
 ENV FLASK_APP=/usr/local/share/honeypot.py
 
