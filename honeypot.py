@@ -21,9 +21,9 @@ def wplogin():
 
     response_str = "Not Found\n\r"
 
-    def generate(response_str):
+    def generate():
         while True:
             yield response_str
             time.sleep(5)
 
-    return flask.Response(flask.stream_with_context(generate(response_str)), mimetype='text/html')
+    return flask.Response(flask.stream_with_context(generate()))
