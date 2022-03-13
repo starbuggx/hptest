@@ -27,7 +27,3 @@ def wplogin():
             time.sleep(5)
 
     return flask.Response(flask.stream_with_context(generate(response_str)), mimetype='text/html')
-
-
-# if __name__ == "__main__":
-#     app.run(host='0.0.0.0', port=8080)
